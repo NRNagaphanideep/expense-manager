@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Expense Manager Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This is a React.js class component-based Expense Manager application that tracks income and expenses. It offers features such as:
 
-In the project directory, you can run:
+- Date selection with a calendar (select by date, month, year).
+- An expense form with fields for title, amount, comment, and type (income/expense).
+- An expense list that reflects the exact selected date and time.
+- A balance component showing income, expenses, and balance with icons.
+- A pie chart comparing monthly, quarterly, half-yearly, and yearly data.
+- A downloadable PDF formatted like a bank statement with comments and credit/debit labels.
 
-### `npm start`
+## How to Run the Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+2. Install dependencies:
+   npm install
+3. Run the application:
+   npm start
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+The project is organized into the following components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Balance.js**: Displays the income, expenses, and balance.
+- **Calendar.js**: Provides date selection.
+- **ExpenseForm.js**: Allows users to input expense details.
+- **ExpenseList.js**: Displays the list of transactions.
+- **PDFDownload.js**: Generates a downloadable PDF report.
+- **PieChart.js**: Displays comparison charts.
 
-### `npm run build`
+## Advanced CSS Styling
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The project includes advanced CSS for both desktop and mobile views.
+- Font styles, hover effects, and responsive layouts ensure a polished design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Common Issues Resolved
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Proper handling of date formatting using `moment.js`.
+- Correct rendering of icons and layout in the expense list and balance.
+- Smooth integration of the calendar with date reflection in the expense list.
+  Project Components and Flow
+  Balance (Balance.js): Displays income, expenses, and the final balance with icons.
+  Calendar (Calendar.js): A date picker for selecting dates, which will be reflected in the expense list.
+  ExpenseForm (ExpenseForm.js): Allows users to input details for income or expenses, including title, amount, type (income/expense), and a comment section.
+  ExpenseList (ExpenseList.js): Lists all transactions for the selected date, showing the date, time, title, amount, and comments.
+  PieChart (PieChart.js): Displays a comparison chart for monthly, quarterly, half-yearly, and yearly expenses.
+  PDFDownload (PDFDownload.js): Allows users to download a PDF with transactions formatted as a bank statement.
+  Detailed Flow
+  Calendar Date Selection: The selected date will be passed to both the ExpenseForm and ExpenseList components.
+  Expense Entry: Users can add income or expense transactions with details like title, amount, and comments.
+  Expense List Update: The transactions will display along with the selected date and time.
+  Balance Update: The balance component will calculate income minus expenses.
+  PDF Download: The downloaded PDF will display all transactions in a table format, showing details such as date, amount, comments, and whether it’s a debit or credit.
+  Key Points Addressed:
+  Icons: Will include up-arrow for income, down-arrow for expenses, and a wallet icon for balance.
+  Currency Format: All amounts will be displayed in rupees with appropriate formatting.
+  Styling: Advanced CSS will ensure a polished, responsive layout.

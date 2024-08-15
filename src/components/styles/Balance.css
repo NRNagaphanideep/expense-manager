@@ -1,0 +1,42 @@
+.balance-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.balance-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.balance-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.balance-item p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.income-icon {
+  color: #28a745;
+}
+
+.expense-icon {
+  color: #dc3545;
+}
+
+.balance-icon {
+  color: #007bff;
+}
