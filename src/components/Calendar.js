@@ -16,6 +16,9 @@ class Calendar extends React.Component {
           onChange={this.handleChange}
           dateFormat="dd/MM/yyyy"
           className="date-picker"
+          showMonthDropdown
+          showYearDropdown
+          dropdownMode="select" // Optional: Changes dropdown style to a select menu
         />
       </div>
     );
